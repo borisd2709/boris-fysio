@@ -140,10 +140,11 @@ export default function Home() {
         </p>
 
         <ul className="space-y-3 text-gray-700">
-          <li>Tinnitus</li>
+          
           <li>Kaakspanning</li>
           <li>Kaken klemmen</li>
           <li>Bruxisme (tandenknarsen)</li>
+          <li>Tinnitus</li>
         </ul>
 
       </div>
@@ -157,11 +158,11 @@ export default function Home() {
 
         <p className="text-gray-600 mb-6">
           Gericht op het verbeteren van beweging,
-          verminderen van spanning en herstellen van balans in het lichaam.
+          verminderen van spanning en herstellen van balans in het lichaam. We gebruiken ook technieken vanuit de osteopathie.
         </p>
 
         <ul className="space-y-3 text-gray-700">
-          <li>Nekklachten</li>
+          <li>Nek/schouderklachten</li>
           <li>Middenrugklachten</li>
           <li>Hoofdpijn</li>
           <li>Bewegingsbeperkingen</li>
@@ -321,7 +322,56 @@ Daarbij kijken we niet alleen naar klachten, maar ook naar hoe spanning zich vas
           </a>
         </div>
       </section>
+      <footer className="bg-[#F7F7F4] border-t">
+        <div className="max-w-6xl mx-auto px-6 py-16">
+
+          <div className="grid md:grid-cols-4 gap-12">
+
+            <div>
+              <img src="/images/logo.png" alt="Boris Drogt" className="h-32 w-auto mb-6" />
+              <div className="space-y-3 text-gray-600">
+                <p>Nijmegen</p>
+                <a href="mailto:info@borisdrogtfysio.nl" className="block hover:text-black transition">info@borisdrogtfysio.nl</a>
+                <a href="tel:+31612345678" className="block hover:text-black transition">+31 6 11628553</a>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="font-semibold tracking-wide mb-6">VERDER LEZEN</h3>
+              <ul className="space-y-3 text-gray-600">
+                <li><a href="/werkwijze" className="hover:text-black transition">Werkwijze</a></li>
+                <li><a href="/voor-wie" className="hover:text-black transition">Voor wie</a></li>
+                <li><a href="/kennisbank" className="hover:text-black transition">Kennisbank</a></li>
+                <li><a href="/kennisclips" className="hover:text-black transition">Kennisclips</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-semibold tracking-wide mb-6">KLACHTEN</h3>
+              <ul className="space-y-3 text-gray-600">
+                <li><a href="/tinnitus" className="hover:text-black transition">Tinnitus</a></li>
+                <li><a href="/hoofdpijn" className="hover:text-black transition">Hoofdpijn</a></li>
+                <li><a href="/kaakspanning" className="hover:text-black transition">Kaakfysiotherapie</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-semibold tracking-wide mb-6">PRAKTISCH</h3>
+              <ul className="space-y-3 text-gray-600">
+                <li><a href="/afspraak" className="hover:text-black transition">Maak een afspraak</a></li>
+                <li><a href="/praktisch" className="hover:text-black transition">Praktische info</a></li>
+                <li><a href="/reviews" className="hover:text-black transition">Google Reviews</a></li>
+                <li><a href="https://www.linkedin.com/company/boris-drogt-fysio-manuele-therapie" target="_blank" rel="noopener noreferrer" className="hover:text-black transition">LinkedIn</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div className="border-t mt-12 pt-6 text-sm text-gray-500">© {new Date().getFullYear()} Boris Drogt</div>
+
+        </div>
+      </footer>
 
     </main>
-  )
+  );
 }

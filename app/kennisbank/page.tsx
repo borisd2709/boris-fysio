@@ -47,17 +47,31 @@ const categories = [
 
   {
     title: "Stress & Herstel",
-    posts: [],
+    posts: [
+      {
+        title: "Wanneer je lichaam niet meer tot rust komt",
+        slug: "stress-burnout",
+      },],
   },
 
   {
     title: "Slaap",
-    posts: [],
+    posts: [
+      {
+        title: "Slaap, herstel en het lichaam",
+        slug: "slaap",
+      },
+    ],
   },
 
   {
     title: "Hormonen",
-    posts: [],
+    posts: [
+      {
+        title: "Hormonen, spanning en de (peri)menopauze",
+        slug: "hormonen-menopauze",
+      },
+    ],
   },
 ]
 

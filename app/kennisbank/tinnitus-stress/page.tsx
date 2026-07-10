@@ -205,7 +205,7 @@ export default function Page() {
           </p>
 
           <Link
-            href="/kennisbank/tinnitus-spanning"
+            href="/tinnitus"
             className="inline-block px-5 py-3 bg-[#5E6F52] text-white rounded-lg hover:bg-[#4F5D45] transition"
           >
             Lees meer over tinnitus

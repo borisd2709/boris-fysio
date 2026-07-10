@@ -15,7 +15,12 @@ export default function TinnitusPage() {
           Spanning in je lichaam en aandacht voor het geluid spelen vaak een grote rol.
         </p>
       </section>
-
+    <div className="max-w-2xl mx-auto py-12">
+  <p className="text-2xl italic text-gray-800">
+    Het probleem zit vaak niet in de klacht,
+    maar in hoe het lichaam probeert zich aan te passen.
+  </p>
+</div>
       {/* UITLEG (SEO belangrijk) */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-3xl mx-auto px-6">
