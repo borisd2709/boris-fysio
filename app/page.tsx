@@ -1,6 +1,7 @@
 import { BodySystems } from "./components/BodySystems";
 import approaches from "./data/approaches.json"
 import ApproachCard from "./components/ApproachCard"
+import Testimonials from "./components/Testimonials";
 
 interface Approach {
   slug: string;
@@ -122,6 +123,29 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* KENNISCLIP */}
+        <div className="my-16 max-w-lg mx-auto">
+
+           <p className="text-xs uppercase tracking-wide text-gray-500 mb-2">
+    Video
+  </p>
+        <a
+          href="https://www.youtube.com/watch?v=RQHI7Y_V6iI"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block"
+        >
+          <img
+            src="https://i.ytimg.com/vi/RQHI7Y_V6iI/maxresdefault.jpg"
+            alt="Mijn visie en mijn praktijk"
+            className="rounded-lg mb-4"
+          />
+
+
+          <h3 className="text-xl font-semibold mb-2">Mijn visie en mijn praktijk</h3>
+        </a>
+</div>
           <section className="py-24 bg-white">
   <div className="max-w-5xl mx-auto px-6">
 
@@ -301,8 +325,38 @@ Daarbij kijken we niet alleen naar klachten, maar ook naar hoe spanning zich vas
           </div>
         </div>
       </section>
+            <Testimonials />
+      
 
-      {/* CTA MET NATUUR */}
+      {/* LAST-MINUTE AFSPRAKEN */}
+<section className="py-20 bg-[#F7F7F4]">
+  <div className="max-w-3xl mx-auto px-6">
+
+    <div className="border rounded-xl bg-white p-8">
+
+      <h2 className="text-2xl font-semibold mb-4">
+        Last-minute afspraak
+      </h2>
+
+      <p className="text-gray-700 mb-6 leading-relaxed">
+        Soms komen er op korte termijn plaatsen vrij in de agenda. Deze momenten zijn bedoeld voor bestaande patiënten en kunnen tegen een gereduceerd tarief worden geboekt.
+      </p>
+
+      <p className="text-gray-700 mb-8">
+        Bekijk de actuele beschikbaarheid.
+      </p>
+
+      <a
+        href="/last-minute"
+        className="inline-block px-6 py-3 bg-[#5E6F52] text-white rounded-lg"
+      >
+        Bekijk beschikbaarheid
+      </a>
+
+    </div>
+  </div>
+</section>
+{/* CTA MET NATUUR */}
       <section className="relative py-24 text-center text-white">
 
         <div
@@ -322,6 +376,7 @@ Daarbij kijken we niet alleen naar klachten, maar ook naar hoe spanning zich vas
           </a>
         </div>
       </section>
+
       <footer className="bg-[#F7F7F4] border-t">
         <div className="max-w-6xl mx-auto px-6 py-16">
 
@@ -360,7 +415,7 @@ Daarbij kijken we niet alleen naar klachten, maar ook naar hoe spanning zich vas
               <ul className="space-y-3 text-gray-600">
                 <li><a href="/afspraak" className="hover:text-black transition">Maak een afspraak</a></li>
                 <li><a href="/praktisch" className="hover:text-black transition">Praktische info</a></li>
-                <li><a href="/reviews" className="hover:text-black transition">Google Reviews</a></li>
+                
                 <li><a href="https://www.linkedin.com/company/boris-drogt-fysio-manuele-therapie" target="_blank" rel="noopener noreferrer" className="hover:text-black transition">LinkedIn</a></li>
               </ul>
             </div>

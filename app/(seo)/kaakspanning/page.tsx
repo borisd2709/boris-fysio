@@ -18,27 +18,60 @@ export default function KaakspanningPage() {
           met hoe je lichaam omgaat met spanning.
         </p>
       </section>
+      <div className="max-w-5xl mx-auto px-6">
 
-      {/* HERKENNING */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-3xl mx-auto px-6">
+    <div className="grid md:grid-cols-2 gap-12">
 
-          <h2 className="text-2xl font-semibold mb-6">
-            Misschien herken je dit
-          </h2>
+      {/* herkenning */}
+      <div className="border rounded-xl p-8">
 
-          <ul className="space-y-3 text-gray-700">
-            <li>Je kaken staan vaak gespannen</li>
+        <h2 className="text-2xl font-semibold mb-6">
+          Misschien herken je dit
+        </h2>
+
+        
+
+        <ul className="space-y-3 text-gray-700">
+          
+          <li>Je kaken staan vaak gespannen</li>
             <li>Je klemt of knarst met je tanden</li>
             <li>Je hebt pijn of vermoeidheid in je kaak</li>
             <li>Je merkt spanning in je gezicht of slapen</li>
             <li>Je hebt hoofdpijn of nekklachten</li>
             <li>Ontspannen voelt moeilijk</li>
-          </ul>
+        </ul>
 
-        </div>
-      </section>
+      </div>
 
+      {/* klachten */}
+      <div className="border rounded-xl p-8">
+
+        <h2 className="text-2xl font-semibold mb-6">
+          
+        </h2>
+
+        
+
+        <ul className="space-y-3 text-gray-700">
+          <li>crepiteren, knoepen, kraken kaakgewricht</li>
+          <li>"tandpijn"</li>
+          <li>beperkte kaakopening</li>
+          
+          <li>tinnitus/oorsuizen</li>
+          <li>gespannen houding</li>
+          <li>uitgebreid pijnbeeld</li>
+          <li>uitstraling naar de schouder, arm</li>
+          <li>"oorpijn"</li>
+          <li>voorhoofdsholte ontsteking</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+      
       {/* UITLEG */}
       <section className="py-20">
         <div className="max-w-3xl mx-auto px-6">
