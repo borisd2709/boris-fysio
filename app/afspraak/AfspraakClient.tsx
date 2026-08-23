@@ -31,9 +31,7 @@ const startParam = searchParams.get("start");
     if (!selectedDate) return;
 
     const response = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/api/event?date=${Date.parse(
-        selectedDate
-      )}`
+      `/api/event?date=${Date.parse(selectedDate)}`
     );
 
     const data = await response.json();
@@ -118,9 +116,7 @@ const end = new Date(
       return;
     }
 
-    const response = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/api/event`,
-      {
+    const response = await fetch("/api/event", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

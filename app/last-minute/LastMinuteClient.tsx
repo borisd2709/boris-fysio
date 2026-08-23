@@ -33,9 +33,7 @@ import { useEffect, useState } from "react";
       if (!selectedDate) return;
   
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/event?date=${Date.parse(
-          selectedDate
-        )}`
+        `/api/event?date=${Date.parse(selectedDate)}`
       );
   
       const data = await response.json();
@@ -121,7 +119,7 @@ import { useEffect, useState } from "react";
       }
   
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/event`,
+        `/api/event?date=${Date.parse(selectedDate)}`,
         {
           method: "POST",
           headers: {

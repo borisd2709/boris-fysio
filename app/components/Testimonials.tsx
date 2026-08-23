@@ -14,18 +14,29 @@ export default function Testimonials() {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
 
   useEffect(() => {
-    async function loadTestimonials() {
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/testimonials`
-      );
+  async function loadTestimonials() {
+    try {
+      const response = await fetch("/api/testimonials");
+
+      if (!response.ok) {
+        console.error("API error", response.status);
+        return;
+      }
 
       const data = await response.json();
 
-      setTestimonials(data.slice(0, 3));
+      if (Array.isArray(data)) {
+        setTestimonials(data.slice(0, 3));
+      } else {
+        console.error("Geen array ontvangen", data);
+      }
+    } catch (error) {
+      console.error("Testimonials laden mislukt", error);
     }
+  }
 
-    loadTestimonials();
-  }, []);
+  loadTestimonials();
+}, []);
 
   return (
     <section className="py-20 bg-[#F7F7F4]">
