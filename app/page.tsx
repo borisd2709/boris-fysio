@@ -19,12 +19,11 @@ export default function Home() {
 
         {/* Achtergrondbeeld */}
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-30"
-          style={{
-            backgroundImage:
-              "url('/images/hero-calm.jpg')", // rustige foto (geen behandeling!)
-          }}
-        />
+  className="absolute inset-0 bg-cover bg-center opacity-30"
+  style={{ backgroundImage: "url('/images/hero-calm.jpg')" }}
+/>
+
+<div className="absolute inset-0 bg-white/70 md:bg-white/60" />
         
 
         <div className="relative max-w-4xl mx-auto px-6 py-32">
