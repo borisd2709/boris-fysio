@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "./components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,19 +26,7 @@ export default function RootLayout({
   return (
     <html lang="nl">
       <body className="bg-white text-gray-900">
-        <header className="p-6 flex justify-between items-center">
-          <div className="font-bold text-lg">Boris Drogt</div>
-
-          <nav className="flex gap-6">
-            <a href="/">Home</a>
-            <a href="/werkwijze">Werkwijze</a>
-            <a href="/voor-wie">Voor wie</a>
-            <a href="/online/tinnitus">Online</a>
-            <a href="/kennisbank">Kennisbank</a>
-            <a href="/kennisclips">Kennisclips</a>
-            <a href="/afspraak">Afspraak</a>
-          </nav>
-        </header>
+        <Header />
 
         {children}
       </body>

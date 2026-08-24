@@ -108,7 +108,7 @@ export default function Home() {
               Kaakspanning
             </a>
             <a href="/tinnitus" className="p-6 border hover:bg-white">
-              Tinnitus / oorsuizen
+              Tinnitus /oorsuizen
             </a>
             <a href="/hoofdpijn" className="p-6 border hover:bg-white">
               Hoofdpijn
@@ -117,7 +117,7 @@ export default function Home() {
               Nek/schouderspanning
             </a>
             <a href="/bekken-rugspanning" className="p-6 border hover:bg-white">
-              bekken/rugspanning
+              Bekken/rugspanning
             </a>
             
           </div>
@@ -125,118 +125,85 @@ export default function Home() {
       </section>
 
       {/* KENNISCLIP */}
-        <div className="my-16 max-w-lg mx-auto">
+        <div className="my-16 max-w-5xl mx-auto">
 
-           <p className="text-xs uppercase tracking-wide text-gray-500 mb-2">
+  <p className="text-xs uppercase tracking-wide text-gray-500 mb-2">
     Video
   </p>
-        <a
-          href="https://www.youtube.com/watch?v=RQHI7Y_V6iI"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block"
-        >
-          <img
-            src="https://i.ytimg.com/vi/RQHI7Y_V6iI/maxresdefault.jpg"
-            alt="Mijn visie en mijn praktijk"
-            className="rounded-lg mb-4"
-          />
 
+  <div className="aspect-video rounded-lg overflow-hidden shadow-sm">
+    <iframe
+      className="w-full h-full"
+      src="https://www.youtube.com/embed/RQHI7Y_V6iI"
+      title="Mijn visie en mijn praktijk"
+    />
+  </div>
 
-          <h3 className="text-xl font-semibold mb-2">Mijn visie en mijn praktijk</h3>
-        </a>
+  <h3 className="text-xl font-semibold mt-4">
+    Mijn visie en mijn praktijk
+  </h3>
+
 </div>
-          <section className="py-24 bg-white">
-  <div className="max-w-5xl mx-auto px-6">
-
-    <div className="grid md:grid-cols-2 gap-12">
-
-      {/* Kaakfysiotherapie */}
-      <div className="border rounded-xl p-8">
-
-        <h2 className="text-2xl font-semibold mb-6">
-          Kaakfysiotherapie
-        </h2>
-
-        <p className="text-gray-600 mb-6">
-          Gespecialiseerd in klachten waarbij spanning,
-          ademhaling en het kaakgebied een rol spelen.
-        </p>
-
-        <ul className="space-y-3 text-gray-700">
           
-          <li>Kaakspanning</li>
-          <li>Kaken klemmen</li>
-          <li>Bruxisme (tandenknarsen)</li>
-          <li>Tinnitus</li>
-        </ul>
+      {/* WERKWIJZE + SUBTIEL BEELD */}
+      
+      <section className="py-24">
+  <div className="max-w-5xl mx-auto">
 
+    <div className="grid md:grid-cols-4 gap-12 mt-12 text-center">
+
+      <div>
+        <h3 className="font-semibold mb-2">Verkennen</h3>
+        <p className="text-sm text-gray-600">
+          kijken naar het geheel
+        </p>
       </div>
 
-      {/* Manuele therapie */}
-      <div className="border rounded-xl p-8">
-
-        <h2 className="text-2xl font-semibold mb-6">
-          Manuele therapie
-        </h2>
-
-        <p className="text-gray-600 mb-6">
-          Gericht op het verbeteren van beweging,
-          verminderen van spanning en herstellen van balans in het lichaam. We gebruiken ook technieken vanuit de osteopathie.
+      <div>
+        <h3 className="font-semibold mb-2">Ervaren</h3>
+        <p className="text-sm text-gray-600">
+          voelen wat er gebeurt
         </p>
+      </div>
 
-        <ul className="space-y-3 text-gray-700">
-          <li>Nek/schouderklachten</li>
-          <li>Middenrugklachten</li>
-          <li>Hoofdpijn</li>
-          <li>Bewegingsbeperkingen</li>
-        </ul>
+      <div>
+        <h3 className="font-semibold mb-2">Bewegen</h3>
+        <p className="text-sm text-gray-600">
+          nieuwe patronen
+        </p>
+      </div>
 
+      <div>
+        <h3 className="font-semibold mb-2">Integreren</h3>
+        <p className="text-sm text-gray-600">
+          in je dagelijks leven
+        </p>
       </div>
 
     </div>
 
+    
+      
+
+    <div className="mt-8 text-left">
+      <a
+        href="/werkwijze"
+        className="inline-block border px-6 py-3"
+      >
+        Bekijk mijn werkwijze
+      </a>
+    </div>
+    
+
+    {/* Beeld */}
+    <div
+      className="h-[400px] bg-cover bg-center rounded"
+      style={{
+        backgroundImage: "url('/images/body awareness.jpg')",
+      }}
+    />
   </div>
 </section>
-      {/* WERKWIJZE + SUBTIEL BEELD */}
-      <section className="py-24">
-        <div className="grid md:grid-cols-4 gap-8 mt-12">
-          
-
-          <div>
-            <h3 className="font-semibold mb-2">Verkennen</h3>
-            <p className="text-sm text-gray-600">kijken naar het geheel</p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold mb-2">Ervaren</h3>
-            <p className="text-sm text-gray-600">voelen wat er gebeurt</p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold mb-2">Bewegen</h3>
-            <p className="text-sm text-gray-600">nieuwe patronen</p>
-          </div>
-
-          <div>
-            <h3 className="font-semibold mb-2">Integreren</h3>
-            <p className="text-sm text-gray-600">in je dagelijks leven</p>
-          </div>
-
-        </div>
-
-        <a href="/werkwijze" className="inline-block mt-8 border px-6 py-3">
-          Bekijk mijn werkwijze
-        </a>
-
-        {/* Beeld */}
-        <div
-          className="h-[400px] bg-cover bg-center rounded"
-          style={{
-            backgroundImage: "url('/images/body awareness.jpg')",
-          }}
-        />
-      </section>
 
       <section className="py-24 bg-gray-50">
         <div className="max-w-5xl mx-auto px-6">
@@ -292,7 +259,56 @@ Daarbij kijken we niet alleen naar klachten, maar ook naar hoe spanning zich vas
         </div>
       </section>
 
-      
+      <div className="max-w-5xl mx-auto px-6">
+
+    <div className="grid md:grid-cols-2 gap-12">
+
+      {/* Kaakfysiotherapie */}
+      <div className="border rounded-xl p-8">
+
+        <h2 className="text-2xl font-semibold mb-6">
+          Kaakfysiotherapie
+        </h2>
+
+        <p className="text-gray-600 mb-6">
+          Gespecialiseerd in klachten waarbij spanning,
+          ademhaling en het kaakgebied een rol spelen.
+        </p>
+
+        <ul className="space-y-3 text-gray-700">
+          
+          <li>Kaakspanning</li>
+          <li>Kaken klemmen</li>
+          <li>Bruxisme (tandenknarsen)</li>
+          <li>Tinnitus</li>
+        </ul>
+
+      </div>
+
+      {/* Manuele therapie */}
+      <div className="border rounded-xl p-8">
+
+        <h2 className="text-2xl font-semibold mb-6">
+          Manuele therapie
+        </h2>
+
+        <p className="text-gray-600 mb-6">
+          Gericht op het verbeteren van beweging,
+          verminderen van spanning en herstellen van balans in het lichaam. We gebruiken ook technieken vanuit de osteopathie.
+        </p>
+
+        <ul className="space-y-3 text-gray-700">
+          <li>Nek/schouderklachten</li>
+          <li>Middenrugklachten</li>
+          <li>Hoofdpijn</li>
+          <li>Bewegingsbeperkingen</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
 
       {/* OVER BORIS */}
       <section className="py-24 bg-gray-50">
