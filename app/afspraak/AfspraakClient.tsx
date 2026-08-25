@@ -14,6 +14,7 @@ type Event = {
 export default function Afspraak() {
   const [selectedDate, setSelectedDate] = useState("");
   const [events, setEvents] = useState<Event[]>([]);
+  const [eventsLoaded, setEventsLoaded] = useState(false);
   const [selectedTime, setSelectedTime] = useState<Event | null>(null);
 
   const [firstname, setFirstname] = useState("");
@@ -38,6 +39,7 @@ const startParam = searchParams.get("start");
     console.table(data);
 
     setEvents(data);
+    setEventsLoaded(true);
   }
 
   function generateSlots(date: string) {
@@ -91,7 +93,8 @@ const end = new Date(
   });
 }
 
-  const availableSlots = selectedDate
+  const availableSlots =
+    eventsLoaded && selectedDate
     ? getAvailableSlots(generateSlots(selectedDate), events)
     : [];
     
@@ -171,7 +174,11 @@ const end = new Date(
         <input
           type="date"
           value={selectedDate}
-          onChange={(e) => setSelectedDate(e.target.value)}
+          onChange={(e) => {
+            setSelectedDate(e.target.value);
+            setEventsLoaded(false);
+            setEvents([]);
+          }}
           className="border rounded-lg px-4 py-3 w-full max-w-xs"
         />
 
