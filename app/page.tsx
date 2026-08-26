@@ -19,11 +19,15 @@ export default function Home() {
 
         {/* Achtergrondbeeld */}
         <div
-  className="absolute inset-0 bg-cover bg-center opacity-30"
+  className="
+    absolute inset-0
+    bg-cover bg-center
+    opacity-15 md:opacity-30
+  "
   style={{ backgroundImage: "url('/images/hero-calm.jpg')" }}
 />
 
-<div className="absolute inset-0 bg-white/70 md:bg-white/60" />
+<div className="absolute inset-0 bg-white/15 md:bg-white/0" />
         
 
         <div className="relative max-w-4xl mx-auto px-6 py-32">
@@ -97,25 +101,25 @@ export default function Home() {
       {/* INGANGEN */}
       <section className="py-24 bg-gray-50">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl font-semibold mb-12">
+          <h2 className="text-3xl font-semibold mb-12 text-gray-900">
             Waar merk je het?
           </h2>
 
           <div className="grid md:grid-cols-3 gap-6 text-lg">
             
-            <a href="/kaakspanning" className="p-6 border hover:bg-white">
+            <a href="/kaakspanning" className="p-6 border bg-white text-gray-900 hover:bg-gray-100">
               Kaakspanning
             </a>
-            <a href="/tinnitus" className="p-6 border hover:bg-white">
+            <a href="/tinnitus" className="p-6 border bg-white text-gray-900 hover:bg-gray-100">
               Tinnitus /oorsuizen
             </a>
-            <a href="/hoofdpijn" className="p-6 border hover:bg-white">
+            <a href="/hoofdpijn" className="p-6 border bg-white text-gray-900 hover:bg-gray-100">
               Hoofdpijn
             </a>
-            <a href="/nek-schouderspanning" className="p-6 border hover:bg-white">
+            <a href="/nek-schouderspanning" className="p-6 border bg-white text-gray-900 hover:bg-gray-100">
               Nek/schouderspanning
             </a>
-            <a href="/bekken-rugspanning" className="p-6 border hover:bg-white">
+            <a href="/bekken-rugspanning" className="p-6 border bg-white text-gray-900 hover:bg-gray-100">
               Bekken/rugspanning
             </a>
             
