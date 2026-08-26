@@ -144,7 +144,7 @@ maar ook om nieuwe ervaringen een plek te geven in het dagelijks leven.
     <ul className="space-y-3 text-gray-700">
       <li>Kaakfysiotherapie</li>
       <li>Manuele therapie</li>
-      <li>technieken vanuit de osteopathie</li>
+      <li>Technieken vanuit de osteopathie</li>
       <li>Oefentherapie</li>
       <li>Leefstijl en herstel</li>
       <li>Educatie en zelfmanagement</li>
@@ -244,6 +244,7 @@ maar ook om nieuwe ervaringen een plek te geven in het dagelijks leven.
 
       <p>• Kaakfysiotherapie Orofaciale therapie</p>
       <p>• Manuele therapie</p>
+      <p>• Gezondheidswetenschappen gezondheidsvoorlichting gedragsverandering</p>
       <p>• BIG-geregistreerd fysiotherapeut</p>
       <p>• Kwaliteitsregister Fysiotherapie</p>
 
