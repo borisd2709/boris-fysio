@@ -32,7 +32,7 @@ export default function Header() {
 
           <div className="hidden md:flex items-center gap-2 text-sm text-gray-600">
             <span aria-hidden="true">📞</span>
-            <a href="tel:+31612345678" className="hover:text-[#5E6F52]">
+            <a href="tel:+31611628553" className="hover:text-[#5E6F52]">
               06-11628553
             </a>
           </div>

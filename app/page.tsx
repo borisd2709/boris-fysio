@@ -37,7 +37,7 @@ export default function Home() {
             Soms ligt de volgende stap in het ervaren wat je lichaam al weet.
           </h1>
 
-          <p className="text-lg text-gray-700 mb-10 max-w-2xl">
+          <p className="text-lg text-gray-700 mb-10 max-w-2xl md:bg-white/0">
             Wanneer spanning zich vastzet in je kaak, nek, ademhaling of gehoor,
             is meer uitleg niet altijd de oplossing.
             Soms begint verandering bij aandacht, beweging en het opnieuw leren voelen. Boris Drogt. Gespecialiseerd in kaakfysiotherapie en manuele therapie bij tinnitus, hoofdpijn, kaakspanning, nekspaning, bekkenspanning en stressgerelateerde klachten.
