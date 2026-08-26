@@ -400,9 +400,12 @@ Daarbij kijken we niet alleen naar klachten, maar ook naar hoe spanning zich vas
             <div>
               <img src="/images/logo.png" alt="Boris Drogt" className="h-32 w-auto mb-6" />
               <div className="space-y-3 text-gray-600">
+                
+                <p>Sloetstraat 14</p>
+                <p>6524 AS</p>
                 <p>Nijmegen</p>
-                <a href="mailto:info@borisdrogtfysio.nl" className="block hover:text-black transition">info@borisdrogtfysio.nl</a>
-                <a href="tel:+31612345678" className="block hover:text-black transition">+31 6 11628553</a>
+                <p>info@borisdrogtfysio.nl</p>
+                <p>+31 6 11628553</p>
               </div>
             </div>
 

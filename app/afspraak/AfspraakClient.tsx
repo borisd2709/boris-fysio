@@ -153,7 +153,8 @@ const end = new Date(
       </h1>
 
         <p className="text-gray-600 mb-12">
-        Kies eerst een datum en vervolgens een beschikbaar tijdstip door beschikbare tijden op te halen.
+        Kies eerst een datum en vervolgens een beschikbaar tijdstip door beschikbare tijden op te halen. Lukt online boeken niet?
+Bel gerust: 06-11628553
       </p>
       <div className="mt-6">
         <Link

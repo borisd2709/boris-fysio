@@ -8,6 +8,31 @@ export default function TarievenVergoedingen() {
       <section className="max-w-4xl mx-auto px-6 pt-28 pb-16">
 
         <h1 className="text-4xl md:text-5xl font-semibold leading-tight mb-6">
+          Adres
+        </h1>
+
+        <p className="text-lg text-gray-600 max-w-2xl">
+          Sloetstraat 14
+          
+        </p>
+        <p className="text-lg text-gray-600 max-w-2xl">
+          
+          6524 AS
+          
+        </p>
+        <p className="text-lg text-gray-600 max-w-2xl">
+          
+          Nijmegen
+        </p>
+
+        
+
+      </section>
+      <section className="max-w-4xl mx-auto px-6 pt-28 pb-16">
+
+        
+
+        <h1 className="text-4xl md:text-5xl font-semibold leading-tight mb-6">
           Tarieven & vergoedingen
         </h1>
 

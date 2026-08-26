@@ -23,6 +23,17 @@ export default function Header() {
           <Link href="/kennisbank">Kennisbank</Link>
           <Link href="/kennisclips">Kennisclips</Link>
           <Link href="/afspraak">Afspraak</Link>
+
+          <div className="hidden md:flex items-center gap-2 text-sm text-gray-600">
+  <span>📞</span>
+  <a
+    href="tel:+31612345678"
+    className="hover:text-[#5E6F52]"
+  >
+    06-11628553
+  </a>
+          </div>
+
         </nav>
 
         {/* Mobiel */}
@@ -40,6 +51,15 @@ export default function Header() {
           <Link href="/kennisbank">Kennisbank</Link>
           <Link href="/kennisclips">Kennisclips</Link>
           <Link href="/afspraak">Afspraak</Link>
+          <div className="hidden md:flex items-center gap-2 text-sm text-gray-600">
+  <span>📞</span>
+  <a
+    href="tel:+31612345678"
+    className="hover:text-[#5E6F52]"
+  >
+    06-11628553
+  </a>
+          </div>
         </nav>
       )}
     </header>
