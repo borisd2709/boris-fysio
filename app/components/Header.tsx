@@ -11,6 +11,7 @@ export default function Header() {
     { href: "/", label: "Home" },
     { href: "/werkwijze", label: "Werkwijze" },
     { href: "/voor-wie", label: "Voor wie" },
+    { href: "/online/tinnitus", label: "Online" },
     { href: "/kennisbank", label: "Kennisbank" },
     { href: "/kennisclips", label: "Kennisclips" },
     { href: "/afspraak", label: "Afspraak" },

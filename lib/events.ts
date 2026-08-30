@@ -1,4 +1,5 @@
 import { google } from "googleapis";
+import nodemailer from "nodemailer";
 
 const jwtClient = new google.auth.JWT({
   email: process.env.GOOGLE_CLIENT_EMAIL,
@@ -9,6 +10,16 @@ const jwtClient = new google.auth.JWT({
 const calendar = google.calendar({
   version: "v3",
   auth: jwtClient,
+});
+
+const transporter = nodemailer.createTransport({
+  host: process.env.SMTP_HOST,
+  port: Number(process.env.SMTP_PORT ?? 587),
+  secure: false,
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS,
+  },
 });
 
 export async function getEvents(date: number) {
@@ -32,7 +43,6 @@ export async function getEvents(date: number) {
 }
 
 export async function postEvent(event: any) {
-
   await calendar.events.insert({
     calendarId: process.env.GOOGLE_CALENDAR_ID,
     requestBody: {
@@ -47,4 +57,30 @@ export async function postEvent(event: any) {
     },
   });
 
+  await transporter.sendMail({
+    from: "info@borisdrogtfysio.nl",
+    to: event.email,
+    bcc: [
+      "info@borisdrogtfysio.nl",
+      "borisdrogt@gmail.com",
+    ],
+    subject: "Bevestiging afspraak Boris Drogt Fysio",
+    html: `
+      <p>Beste ${event.firstname},</p>
+
+      <p>Bedankt voor je afspraak.</p>
+
+      <p>
+        Datum en tijd:
+        <strong>
+        ${new Date(event.start).toLocaleString("nl-NL")}
+        </strong>
+      </p>
+
+      <p>
+        Met vriendelijke groet,<br>
+        Boris Drogt
+      </p>
+    `,
+  });
 }
