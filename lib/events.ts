@@ -71,16 +71,19 @@ export async function postEvent(event: any) {
       <p>Bedankt voor je afspraak.</p>
 
       <p>
-        Datum en tijd:
-        <strong>
-        ${new Date(event.start).toLocaleString("nl-NL")}
-        </strong>
-      </p>
+  Datum en tijd:
+  <strong>
+    ${new Date(event.start).toLocaleString("nl-NL", {
+      timeZone: "Europe/Amsterdam",
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    })}
+  </strong>
+</p>
 
-      <p>
-        Met vriendelijke groet,<br>
-        Boris Drogt
-      </p>
     `,
   });
 }
