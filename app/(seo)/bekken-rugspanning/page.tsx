@@ -37,14 +37,22 @@ export default function BekkenRugPage() {
       </section>
 
       {/* UITLEG */}
-      <section className="py-20">
-        <div className="max-w-3xl mx-auto px-6">
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
-          <h2 className="text-2xl font-semibold mb-6">
-            De verbinding tussen kaak, ademhaling en bekken
-          </h2>
+          <div
+            className="h-[400px] bg-cover bg-center rounded"
+            style={{
+              backgroundImage: "url('/images/psoas.jpg')",
+            }}
+          />
 
-          <p className="text-gray-700 mb-4">
+          <div>
+            <h2 className="text-2xl font-semibold mb-6">
+              De verbinding tussen kaak, ademhaling en bekken
+            </h2>
+
+            <p className="text-gray-700 mb-4">
             Het lichaam functioneert als één geheel.
           </p>
 
@@ -52,24 +60,33 @@ export default function BekkenRugPage() {
             Spanning in de kaak hangt vaak samen met spanning lager in het lichaam,
             zoals in het bekken.
           </p>
-
           <p className="text-gray-700">
             Een belangrijke rol hierin speelt de ademhaling —
             en hoe het middenrif samenwerkt met de bekkenbodem.
           </p>
+          </div>
 
         </div>
       </section>
+      
 
       {/* ADEMHALING */}
       <section className="py-24 bg-gray-50">
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
-          <h2 className="text-2xl font-semibold mb-6">
-            Als de ademhaling stagneert
-          </h2>
+          <div
+            className="h-[400px] bg-cover bg-center rounded"
+            style={{
+              backgroundImage: "url('/images/bekkenspanning.jpg')",
+            }}
+          />
 
-          <p className="text-gray-700 mb-4">
+          <div>
+            <h2 className="text-2xl font-semibold mb-6">
+              Als de ademhaling stagneert
+            </h2>
+
+            <p className="text-gray-700 mb-4">
             Wanneer je ademhaling hoog blijft of niet goed verdiept,
             zie je dat terug in het hele lichaam.
           </p>
@@ -83,9 +100,11 @@ export default function BekkenRugPage() {
           <p className="text-gray-700">
             Hierdoor kan spanning zich opstapelen in de onderrug en het bekken.
           </p>
+          </div>
 
         </div>
       </section>
+     
 
       {/* HOUDING */}
       <section className="py-20">
