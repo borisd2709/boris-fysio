@@ -71,16 +71,23 @@ export default function KaakspanningPage() {
 
   </div>
 
-      
       {/* UITLEG */}
-      <section className="py-20">
-        <div className="max-w-3xl mx-auto px-6">
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
-          <h2 className="text-2xl font-semibold mb-6">
-            Waarom kaakspanning ontstaat
-          </h2>
+          <div
+            className="h-[400px] bg-cover bg-center rounded"
+            style={{
+              backgroundImage: "url('/images/kaak_2.jpg')",
+            }}
+          />
 
-          <p className="text-gray-700 mb-4 leading-relaxed">
+          <div>
+            <h2 className="text-2xl font-semibold mb-6">
+              Waarom kaakspanning ontstaat
+            </h2>
+
+            <p className="text-gray-700 mb-4 leading-relaxed">
             De kaak is één van de plekken waar spanning zich snel vastzet in het lichaam.
           </p>
 
@@ -93,15 +100,18 @@ export default function KaakspanningPage() {
             <li>geconcentreerd bent</li>
             <li>stress ervaart</li>
             <li>veel nadenkt</li>
+            <li>je door de spanning verkeerd ademhaalt</li>
             <li>je aanpast of controle probeert te houden</li>
           </ul>
 
           <p className="text-gray-700 leading-relaxed">
-            De kaak wordt dan onderdeel van een groter patroon van spanning in het lichaam.
+            De kaak wordt dan onderdeel van een groter patroon van spanning in het lichaam. Een goed voorbeeld hiervan is dat er spanning komt op het oor en dat je dan met "oorpijn" bij de huisarts belandt, terwijl het uit de kaak komt.
           </p>
+          </div>
 
         </div>
       </section>
+      
 
       {/* LINK NAAR ANKERPAGINA */}
       <section className="py-20 bg-gray-50">
@@ -128,16 +138,23 @@ export default function KaakspanningPage() {
 
         </div>
       </section>
+{/* HOE HET BLIJFT */}
+<section className="py-24 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
-      {/* HOE HET BLIJFT */}
-      <section className="py-24">
-        <div className="max-w-3xl mx-auto px-6">
+          <div
+            className="h-[400px] bg-cover bg-center rounded"
+            style={{
+              backgroundImage: "url('/images/kaak_1.png')",
+            }}
+          />
 
-          <h2 className="text-3xl font-semibold mb-8">
-            Waarom spanning blijft hangen
-          </h2>
+          <div>
+            <h2 className="text-2xl font-semibold mb-6">
+              Waarom spanning blijft hangen
+            </h2>
 
-          <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 mb-4">
             Veel mensen proberen hun kaak bewust te ontspannen.
             Maar dat lukt vaak maar kort.
           </p>
@@ -151,9 +168,11 @@ export default function KaakspanningPage() {
             Zolang dat systeem “aan” staat,
             blijft de spanning terugkomen.
           </p>
+          </div>
 
         </div>
       </section>
+      
 
       {/* JOUW AANPAK */}
       <section className="py-24 bg-gray-50">
