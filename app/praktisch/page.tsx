@@ -85,7 +85,7 @@ export default function TarievenVergoedingen() {
           </div>
 
           <p className="mt-8 text-gray-700">
-            Een consult duurt ongeveer 30 minuten.
+            Een consult duurt ongeveer 30 minuten. Het behandeltraject  start met een Intake, onderzoek en behandelplan; dit kost 2 consulten waarna er besloten wordt of er een vervolgbehandeling nodig is. Vaak hebben we 4 á 5 consulten nodig.
           </p>
 
         </div>
@@ -106,7 +106,7 @@ export default function TarievenVergoedingen() {
           </p>
 
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Je ontvangt na behandeling een factuur die je zelf kunt
+            Je ontvangt een factuur die je zelf kunt
             indienen bij je zorgverzekeraar.
           </p>
 
