@@ -61,6 +61,7 @@ export default function KaakspanningPage() {
           <li>gespannen houding</li>
           <li>uitgebreid pijnbeeld</li>
           <li>uitstraling naar de schouder, arm</li>
+          <li>"keelpijn globusgevoel slikklachten"</li>
           <li>"oorpijn"</li>
           <li>voorhoofdsholte ontsteking</li>
         </ul>
@@ -105,7 +106,7 @@ export default function KaakspanningPage() {
           </ul>
 
           <p className="text-gray-700 leading-relaxed">
-            De kaak wordt dan onderdeel van een groter patroon van spanning in het lichaam. Een goed voorbeeld hiervan is dat er spanning komt op het oor en dat je dan met "oorpijn" bij de huisarts belandt, terwijl het uit de kaak komt.
+            De kaak wordt dan onderdeel van een groter patroon van spanning in het lichaam. Goede voorbeelden hiervan zijn dat er spanning komt op de keel: globusgevoel en op het oor en dat je dan met "oorpijn" bij de huisarts belandt, terwijl het uit de kaak komt.
           </p>
           </div>
 
