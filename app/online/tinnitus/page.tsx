@@ -184,7 +184,7 @@ export default function OnlineTinnitusFunnel() {
         </p>
 
         <a
-          href="https://hoofdkaaknekfysio.nl"
+          href="https://www.hoofdkaaknekfysio.nl/#/dashboard"
           target="_blank"
           className="inline-block bg-black text-white px-6 py-3"
         >
