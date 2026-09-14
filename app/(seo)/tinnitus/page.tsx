@@ -217,8 +217,25 @@ export default function TinnitusPage() {
       Bij tinnitus werkt dat vaak op een vergelijkbare manier.
     </p>
 
-  </div>
-</section>
+    </div>
+
+    <div className="max-w-3xl mx-auto px-6 mt-8">
+      <p className="mb-4 text-gray-700">
+        Ben je nieuwsgierig?
+        <br />
+        <br />
+        Volg dan in je eigen tijd de online begeleiding
+      </p>
+
+      <Link
+        href="/online/tinnitus"
+        className="inline-block bg-black text-white px-5 py-3 rounded-md font-medium"
+      >
+        Online begeleiding
+      </Link>
+    </div>
+  </section>
+
       {/* JOUW AANPAK (HIER WIN JE) */}
       <section className="py-24">
         <div className="max-w-5xl mx-auto px-6">
