@@ -35,6 +35,8 @@ export default function OnlineTinnitusFunnel() {
             <li>Je lichaam voelt gespannen of onrustig</li>
           </ul>
 
+        
+          
         </div>
       </section>
 
@@ -59,8 +61,53 @@ export default function OnlineTinnitusFunnel() {
           <p className="text-gray-700">
             Daar ligt ook de ingang voor verandering.
           </p>
+          <div className="my-16 max-w-md mx-auto">
 
-        </div>
+  <h3 className="text-xl font-semibold mb-3">
+    Een andere benadering
+  </h3>
+
+  <p className="text-gray-600 mb-6">
+    In dit interview leg ik uit waarom tinnitus niet alleen
+    samenhangt met het oor, maar ook met de verwerking van geluid
+    in het brein.
+  </p>
+
+  <a
+    href="https://www.youtube.com/watch?v=7hJ0pKwF4GI"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block border rounded-xl overflow-hidden hover:shadow-md transition"
+  >
+    <img
+      src="https://i.ytimg.com/vi/7hJ0pKwF4GI/maxresdefault.jpg"
+      alt="Tinnitus, geen probleem van het oor"
+      className="w-full"
+    />
+
+    <div className="p-4">
+      <p className="font-medium">
+        Bekijk kennisclip →
+      </p>
+    </div>
+  </a>
+
+</div>
+<p className="mb-4 text-gray-700">
+            Spreekt deze benadering je aan en herken je de klachten en blijft de spanning telkens terugkomen?
+            <br />
+            <br />
+            Dan kan een onderzoek helpen om beter te begrijpen waarom jouw lichaam
+            deze spanning blijft vasthouden.
+          </p>
+
+          <Link
+            href="/afspraak"
+            className="inline-block bg-black text-white px-5 py-3 rounded-md font-medium"
+          >
+            Maak een afspraak
+          </Link>
+    </div>
       </section>
 
 
