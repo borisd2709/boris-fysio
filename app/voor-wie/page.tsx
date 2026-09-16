@@ -158,8 +158,8 @@ export default function VoorWie() {
             <a href="/hoofdpijn" className="rounded border border-gray-200 bg-white p-6 text-center text-gray-700 hover:border-black">
               Hoofdpijn
             </a>
-            <a href="/nekspanning" className="rounded border border-gray-200 bg-white p-6 text-center text-gray-700 hover:border-black">
-              Nekspanning
+            <a href="/nek-schouderspanning" className="rounded border border-gray-200 bg-white p-6 text-center text-gray-700 hover:border-black">
+              Nek- en schouderspanning
             </a>
             <a href="/bekken-rugspanning" className="rounded border border-gray-200 bg-white p-6 text-center text-gray-700 hover:border-black">
               Bekken- en rugspanning

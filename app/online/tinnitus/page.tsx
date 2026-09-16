@@ -87,7 +87,7 @@ export default function OnlineTinnitusFunnel() {
 
     <div className="p-4">
       <p className="font-medium">
-        Bekijk kennisclip →
+        Bekijk interview →
       </p>
     </div>
   </a>
