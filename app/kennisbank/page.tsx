@@ -46,6 +46,16 @@ const categories = [
   },
 
   {
+    title: "Opgetrokken schouders",
+    posts: [
+      {
+        title: "Waarom blijven je schouders gespannen?",
+        slug: "schouders-gespannen",
+      },
+    ],
+  },
+
+  {
     title: "Stress & Herstel",
     posts: [
       {
