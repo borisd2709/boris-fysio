@@ -49,14 +49,23 @@ verschillende spiergroepen een rol spelen.
 </p>
 
 
-<h2 className="text-2xl font-semibold mt-16 mb-6">
+{/* UITLEG */}
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
-De schouder is meer dan een schouder
+          <div
+            className="h-[400px] bg-cover bg-center rounded"
+            style={{
+              backgroundImage: "url('/images/aap.jpg')",
+            }}
+          />
 
-</h2>
+          <div>
+            <h2 className="text-2xl font-semibold mb-6">
+              De schouder is meer dan een schouder
+            </h2>
 
-
-<p className="mb-6 leading-relaxed">
+            <p className="mb-6 leading-relaxed">
 
 Wanneer een schouder gespannen aanvoelt, kijken we vaak direct naar
 
@@ -95,6 +104,14 @@ De schouder probeert zich voortdurend aan te passen aan wat er elders
 gebeurt.
 
 </p>
+
+          </div>
+
+        </div>
+      </section>
+      
+
+
 
 
 <h2 className="text-2xl font-semibold mt-16 mb-6">
@@ -298,7 +315,7 @@ maar bij het begrijpen van wat het lichaam probeert op te lossen.
 
 </p>
 
-</section>
+        </section>
 {/* CTA */}
       <section className="py-24 text-center">
         <h2 className="text-2xl mb-4">

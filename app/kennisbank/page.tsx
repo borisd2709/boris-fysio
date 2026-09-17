@@ -56,6 +56,16 @@ const categories = [
   },
 
   {
+    title: "Nek-hoofdpijn",
+    posts: [
+      {
+        title: "Kan spanning in je nek hoofdpijn veroorzaken?",
+        slug: "nek-hoofdpijn",
+      },
+    ],
+  },
+
+  {
     title: "Stress & Herstel",
     posts: [
       {
