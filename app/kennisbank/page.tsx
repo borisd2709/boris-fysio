@@ -2,6 +2,15 @@ import Link from "next/link"
 
 const categories = [
   {
+    title: "Spanning afvloeien",
+    posts: [
+      {
+        title: "Hoe kan ik spanning laten afvloeien?",
+        slug: "spanning-afvloeien",
+      },
+    ],
+  },
+  {
     title: "Tinnitus",
     posts: [
       {

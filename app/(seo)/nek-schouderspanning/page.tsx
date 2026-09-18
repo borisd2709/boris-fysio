@@ -68,7 +68,10 @@ export default function Page() {
           <p className="text-gray-700 mb-6">
             Nek- en schouderspanning hangt vaak samen met overbelasting en stress.
           </p>
-
+          <Link href="/kennisbank/spanning-afvloeien" className="underline">
+            Lees meer over het laten afvloeien van spanning
+          </Link>
+          <br />
           <Link href="/stress-burnout" className="underline">
             Lees meer over stress en spanning
           </Link>

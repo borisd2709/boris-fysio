@@ -2,6 +2,8 @@ import { BodySystems } from "./components/BodySystems";
 import approaches from "./data/approaches.json"
 import ApproachCard from "./components/ApproachCard"
 import Testimonials from "./components/Testimonials";
+import Link from "next/link";
+import Image from "next/image";
 
 interface Approach {
   slug: string;
@@ -37,13 +39,15 @@ export default function Home() {
             Soms ligt de volgende stap in het ervaren wat je lichaam al weet.
           </h1>
 
-          <p className="text-gray-100 md:text-slate-700">
+          <p className="text-lg text-gray-600 mb-8">
             Wanneer spanning zich vastzet in je kaak, nek, ademhaling of gehoor,
-            is meer uitleg niet altijd de oplossing.
-            Soms begint verandering bij aandacht, beweging en het opnieuw leren voelen. Boris Drogt. Gespecialiseerd in kaakfysiotherapie en manuele therapie bij tinnitus, hoofdpijn, kaakspanning, nekspaning, bekkenspanning en stressgerelateerde klachten.
+            is meer uitleg niet altijd de oplossing. Soms begint verandering bij
+            aandacht, beweging en het opnieuw leren voelen. Boris Drogt is
+            gespecialiseerd in kaakfysiotherapie en manuele therapie bij
+            tinnitus, hoofdpijn, kaakspanning, nekspanning, bekkenspanning en
+            stressgerelateerde klachten.
           </p>
-
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4">
             <a href="/afspraak" className="bg-black text-white px-6 py-3">
               Maak een afspraak
             </a>
@@ -312,6 +316,8 @@ Daarbij kijken we niet alleen naar klachten, maar ook naar hoe spanning zich vas
     </div>
 
   </div>
+
+
 
       {/* OVER BORIS */}
       <section className="py-24 bg-gray-50">
