@@ -11,6 +11,15 @@ const categories = [
     ],
   },
   {
+    title: "Altijd aan staan, gaspedaal en rem",
+    posts: [
+      {
+        title: "Hoe krijg ik balans tussen mijn gaspedaal en rem?",
+        slug: "gaspedaal-rem",
+      },
+    ],
+  },
+  {
     title: "Tinnitus",
     posts: [
       {

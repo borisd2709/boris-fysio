@@ -276,7 +276,13 @@ Daarbij kijken we niet alleen naar klachten, maar ook naar hoe spanning zich vas
         <h2 className="text-2xl font-semibold mb-6">
           Kaakfysiotherapie
         </h2>
-
+        <Link
+          href="/behandelingen/kaakfysiotherapie"
+          className="inline-flex items-center text-[#5E6F52] font-medium hover:underline"
+        >
+          een kijkje in de praktijk →
+        </Link>
+                <br /><br />
         <p className="text-gray-600 mb-6">
           Gespecialiseerd in klachten waarbij spanning,
           ademhaling en het kaakgebied een rol spelen.
@@ -298,7 +304,13 @@ Daarbij kijken we niet alleen naar klachten, maar ook naar hoe spanning zich vas
         <h2 className="text-2xl font-semibold mb-6">
           Manuele therapie
         </h2>
-
+        <Link
+          href="/behandelingen/manuele_therapie"
+          className="inline-flex items-center text-[#5E6F52] font-medium hover:underline"
+        >
+          een kijkje in de praktijk →
+        </Link>
+                <br /><br />
         <p className="text-gray-600 mb-6">
           Gericht op het verbeteren van beweging,
           verminderen van spanning en herstellen van balans in het lichaam. We gebruiken ook technieken vanuit de osteopathie.

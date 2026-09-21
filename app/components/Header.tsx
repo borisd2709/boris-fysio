@@ -1,21 +1,64 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+
 import { Menu, X } from "lucide-react";
+
+import { useEffect, useRef, useState } from "react";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [behandelingenOpen, setBehandelingenOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const navItems = [
-    { href: "/", label: "Home" },
-    { href: "/werkwijze", label: "Werkwijze" },
-    { href: "/voor-wie", label: "Voor wie" },
-    { href: "/online/tinnitus", label: "Online" },
-    { href: "/kennisbank", label: "Kennisbank" },
-    { href: "/kennisclips", label: "Kennisclips" },
-    { href: "/afspraak", label: "Afspraak" },
-  ];
+  { href: "/", label: "Home" },
+  { href: "/werkwijze", label: "Werkwijze" },
+  { href: "/voor-wie", label: "Voor wie" },
+
+  {
+    label: "Behandelingen",
+    children: [
+      {
+        href: "/behandelingen/kaakfysiotherapie",
+        label: "Kaakfysiotherapie",
+      },
+      {
+        href: "/behandelingen/manuele_therapie",
+        label: "Manuele therapie",
+      },
+      {
+        href: "/behandelingen/herstel",
+        label: "Leefstijl, ademhaling en herstel",
+      },
+    ],
+  },
+
+  { href: "/online/tinnitus", label: "Online" },
+  { href: "/kennisbank", label: "Kennisbank" },
+  { href: "/kennisclips", label: "Kennisclips" },
+  { href: "/afspraak", label: "Afspraak" },
+];
+
+  useEffect(() => {
+  function handleClickOutside(event: MouseEvent) {
+    if (
+      dropdownRef.current &&
+      !dropdownRef.current.contains(event.target as Node)
+    ) {
+      setBehandelingenOpen(false);
+    }
+  }
+
+  document.addEventListener("mousedown", handleClickOutside);
+
+  return () => {
+    document.removeEventListener(
+      "mousedown",
+      handleClickOutside
+    );
+  };
+}, []);
 
   return (
     <header className="bg-white border-b">
@@ -25,11 +68,45 @@ export default function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">
-          {navItems.map((item) => (
-            <Link key={item.href} href={item.href} className="hover:text-[#5E6F52]">
-              {item.label}
-            </Link>
-          ))}
+          {navItems.map((item) =>
+            item.children ? (
+              <div key={item.label} ref={dropdownRef} className="relative">
+                <button
+                  type="button"
+                  onClick={() => setBehandelingenOpen(!behandelingenOpen)}
+                  className="hover:text-[#5E6F52] flex items-center gap-1"
+                >
+                  {item.label}
+                  <span className="text-xs">
+                    {behandelingenOpen ? "▲" : "▼"}
+                  </span>
+                </button>
+
+                {behandelingenOpen && (
+                  <div className="absolute left-0 top-full mt-2 bg-white border shadow-md min-w-64 z-50">
+                    {item.children.map((child) => (
+                      <Link
+                        key={child.href}
+                        href={child.href}
+                        className="block px-4 py-2 hover:bg-gray-100"
+                        onClick={() => setBehandelingenOpen(false)}
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="hover:text-[#5E6F52]"
+              >
+                {item.label}
+              </Link>
+            )
+          )}
 
           <div className="hidden md:flex items-center gap-2 text-sm text-gray-600">
             <span aria-hidden="true">📞</span>
@@ -50,21 +127,56 @@ export default function Header() {
       </div>
 
       {open && (
-        <nav className="md:hidden px-6 pb-4 flex flex-col gap-4 bg-white">
-          {navItems.map((item) => (
-            <Link key={item.href} href={item.href} className="text-gray-900 text-xl">
-              {item.label}
-            </Link>
-          ))}
+  <nav className="md:hidden px-6 pb-4 flex flex-col gap-4 bg-white">
 
-          <div className="flex items-center gap-2 text-sm text-gray-600">
-            <span aria-hidden="true">📞</span>
-            <a href="tel:+31611628553" className="hover:text-[#5E6F52]">
-              06-11628553
-            </a>
-          </div>
-        </nav>
-      )}
+    {navItems.map((item) =>
+      item.children ? (
+        <div key={item.label} ref={dropdownRef}>
+          <button
+            type="button"
+            onClick={() => setBehandelingenOpen(!behandelingenOpen)}
+            className="font-semibold text-gray-900 text-xl flex items-center gap-2"
+          >
+            {item.label}
+            <span>{behandelingenOpen ? "▲" : "▼"}</span>
+          </button>
+
+          {behandelingenOpen && (
+            <div className="pl-4 mt-2 flex flex-col gap-3">
+              {item.children.map((child) => (
+                <Link
+                  key={child.href}
+                  href={child.href}
+                  onClick={() => setOpen(false)}
+                  className="hover:text-[#5E6F52]"
+                >
+                  {child.label}
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
+      ) : (
+        <Link
+          key={item.href}
+          href={item.href}
+          onClick={() => setOpen(false)}
+          className="hover:text-[#5E6F52]"
+        >
+          {item.label}
+        </Link>
+      )
+    )}
+
+    <div className="flex items-center gap-2 text-sm text-gray-600">
+      <span aria-hidden="true">📞</span>
+      <a href="tel:+31611628553" className="hover:text-[#5E6F52]">
+        06-11628553
+      </a>
+    </div>
+
+  </nav>
+)}
     </header>
   );
 }
