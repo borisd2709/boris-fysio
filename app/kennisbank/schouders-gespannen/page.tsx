@@ -209,13 +209,23 @@ te kunnen ontspannen.
 
 </p>
 
-<h2 className="text-2xl font-semibold mt-16 mb-6">
+{/* UITLEG */}
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
-Balans tussen de spieren rondom de schouder
+          <div
+            className="h-[400px] bg-cover bg-center rounded"
+            style={{
+              backgroundImage: "url('/images/schouder.png')",
+            }}
+          />
 
-</h2>
+          <div>
+            <h2 className="text-2xl font-semibold mb-6">
+              Balans tussen de spieren rondom de schouder
+            </h2>
 
-<p className="mb-8 leading-relaxed">
+            <p className="mb-8 leading-relaxed">
 
 Ook de balans tussen verschillende spiergroepen speelt een rol.
 
@@ -228,6 +238,13 @@ verstoord raakt, kan de schouder minder efficiënt bewegen en moeten
 andere spieren gaan compenseren.
 
 </p>
+
+          </div>
+
+        </div>
+      </section>
+
+
 
 <p className="mb-8 leading-relaxed">
 
