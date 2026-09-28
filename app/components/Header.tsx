@@ -8,7 +8,7 @@ import { useEffect, useRef, useState } from "react";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-  const [behandelingenOpen, setBehandelingenOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const navItems = [
@@ -34,7 +34,19 @@ export default function Header() {
     ],
   },
 
-  { href: "/online/tinnitus", label: "Online" },
+  {
+label: "Online",
+children: [
+{
+href: "/online/tinnitus",
+label: "Tinnitus",
+},
+{
+href: "https://kaakfysio-3.vercel.app",
+label: "Kaakfysio App",
+},
+],
+},
   { href: "/kennisbank", label: "Kennisbank" },
   { href: "/kennisclips", label: "Kennisclips" },
   { href: "/afspraak", label: "Afspraak" },
@@ -46,7 +58,7 @@ export default function Header() {
       dropdownRef.current &&
       !dropdownRef.current.contains(event.target as Node)
     ) {
-      setBehandelingenOpen(false);
+      setOpenDropdown(null);
     }
   }
 
@@ -72,24 +84,29 @@ export default function Header() {
             item.children ? (
               <div key={item.label} ref={dropdownRef} className="relative">
                 <button
-                  type="button"
-                  onClick={() => setBehandelingenOpen(!behandelingenOpen)}
-                  className="hover:text-[#5E6F52] flex items-center gap-1"
-                >
-                  {item.label}
-                  <span className="text-xs">
-                    {behandelingenOpen ? "▲" : "▼"}
-                  </span>
-                </button>
+onClick={() =>
+setOpenDropdown(
+openDropdown === item.label
+? null
+: item.label
+)
+}
+className="hover:text-[#5E6F52] flex items-center gap-1"
+>
+{item.label}
+<span>
+{openDropdown === item.label ? "▲" : "▼"}
+</span>
+</button>
 
-                {behandelingenOpen && (
+                {openDropdown === item.label && (
                   <div className="absolute left-0 top-full mt-2 bg-white border shadow-md min-w-64 z-50">
                     {item.children.map((child) => (
                       <Link
                         key={child.href}
                         href={child.href}
                         className="block px-4 py-2 hover:bg-gray-100"
-                        onClick={() => setBehandelingenOpen(false)}
+                        onClick={() => setOpenDropdown(null)}
                       >
                         {child.label}
                       </Link>
@@ -134,14 +151,14 @@ export default function Header() {
         <div key={item.label} ref={dropdownRef}>
           <button
             type="button"
-            onClick={() => setBehandelingenOpen(!behandelingenOpen)}
+            onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
             className="font-semibold text-gray-900 text-xl flex items-center gap-2"
           >
             {item.label}
-            <span>{behandelingenOpen ? "▲" : "▼"}</span>
+            <span>{openDropdown === item.label ? "▲" : "▼"}</span>
           </button>
 
-          {behandelingenOpen && (
+          {openDropdown === item.label && (
             <div className="pl-4 mt-2 flex flex-col gap-3">
               {item.children.map((child) => (
                 <Link

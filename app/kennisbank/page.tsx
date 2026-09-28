@@ -20,6 +20,15 @@ const categories = [
     ],
   },
   {
+    title: "Globus gevoel",
+    posts: [
+      {
+        title: "Waarom voelt het alsof er iets in je keel zit?",
+        slug: "globus_gevoel",
+      },
+    ],
+  },
+  {
     title: "Tinnitus",
     posts: [
       {
