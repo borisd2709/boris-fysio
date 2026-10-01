@@ -11,6 +11,15 @@ const categories = [
     ],
   },
   {
+    title: "Lichamelijk of psychisch",
+    posts: [
+      {
+        title: "Wanneer ernstige aandoeningen zijn uitgesloten, betekent dat niet automatisch dat een klacht psychisch is",
+        slug: "lichamelijk_of_psychisch",
+      },
+    ],
+  },
+  {
     title: "Altijd aan staan, gaspedaal en rem",
     posts: [
       {
