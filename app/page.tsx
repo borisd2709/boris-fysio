@@ -42,10 +42,13 @@ export default function Home() {
           <p className="text-lg text-gray-600 mb-8">
             Wanneer spanning zich vastzet in je kaak, nek, ademhaling of gehoor,
             is meer uitleg niet altijd de oplossing. Soms begint verandering bij
-            aandacht, beweging en het opnieuw leren voelen. Boris Drogt is
-            gespecialiseerd in kaakfysiotherapie en manuele therapie bij
-            tinnitus, hoofdpijn, kaakspanning, nekspanning, bekkenspanning en
-            stressgerelateerde klachten.
+            aandacht, beweging en het opnieuw leren voelen. <br/><br/>Boris Drogt is
+            gespecialiseerd in kaakfysiotherapie (orofaciale therapie), manuele therapie en in leefstijl.
+            <b><br/>Heb je last van:<br/>nek- en schouderklachten, <br/>hoofdpijn, <br/>kaakklachten, <br/>tinnitus (oorsuizen), <br/>een brokgevoel in de keel,
+              <br/>kaken klemmen of tandenknarsen, <br/>bekken/rugklachten, <br/>stressgerelateerde lichamelijke klachten,
+            <br/>terugkerende spanningsklachten.</b><br/>Dan kan het zinvol zijn om verder te kijken
+dan alleen de plek waar je de klacht voelt.
+
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="/afspraak" className="bg-black text-white px-6 py-3">
@@ -324,6 +327,38 @@ Daarbij kijken we niet alleen naar klachten, maar ook naar hoe spanning zich vas
         </ul>
 
       </div>
+
+      {/* Leefstijl, ademhaling en herstel */}
+      <div className="border rounded-xl p-8">
+
+        <h2 className="text-2xl font-semibold mb-6">
+          Leefstijl, ademhaling en herstel
+        </h2>
+        <Link
+          href="/kennisbank"
+          className="inline-flex items-center text-[#5E6F52] font-medium hover:underline"
+        >
+          een kijkje in de kennisbank →
+        </Link>
+                <br /><br />
+        <p className="text-gray-600 mb-6">
+          Soms blijft een klacht terugkomen ondanks behandeling, oefeningen of rust.
+
+In dat soort situaties kan het waardevol zijn om verder te kijken dan de plek waar de klacht zich uit. 
+        </p>
+
+        <ul className="space-y-3 text-gray-700">
+          
+          <li>Neusademhaling en mondademhaling</li>
+          <li>Stress en spanningsregulatie</li>
+          <li>Vermoeidheid en herstel</li>
+          <li>Slaapkwaliteit</li>
+          <li>Hooikoorts en ademhaling</li>
+          <li>Leefstijl en belastbaarheid</li>
+        </ul>
+
+      </div>
+
 
     </div>
 

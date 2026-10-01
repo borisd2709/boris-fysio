@@ -142,6 +142,12 @@ export default function TarievenVergoedingen() {
             Dat geeft ruimte voor persoonlijke aandacht, maatwerk en een
             aanpak die aansluit bij jouw situatie.
           </p>
+          <Link
+          href="/ongecontracteerd"
+          className="inline-flex items-center text-[#5E6F52] font-medium hover:underline"
+        >
+          Toelichting →
+        </Link>
 
         </div>
 

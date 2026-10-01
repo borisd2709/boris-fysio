@@ -20,6 +20,32 @@ export default function VoorWie() {
           Plan een afspraak
         </a>
       </section>
+      {/* KLACHTEN */}
+      <section className="py-20">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-2xl font-semibold mb-10">
+            Klachten waarbij dit vaak speelt
+          </h2>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            <a href="/kaakspanning" className="rounded border border-gray-200 bg-white p-6 text-center text-gray-700 hover:border-black">
+              Kaakspanning
+            </a>
+            <a href="/tinnitus" className="rounded border border-gray-200 bg-white p-6 text-center text-gray-700 hover:border-black">
+              Tinnitus
+            </a>
+            <a href="/hoofdpijn" className="rounded border border-gray-200 bg-white p-6 text-center text-gray-700 hover:border-black">
+              Hoofdpijn
+            </a>
+            <a href="/nek-schouderspanning" className="rounded border border-gray-200 bg-white p-6 text-center text-gray-700 hover:border-black">
+              Nek- en schouderspanning
+            </a>
+            <a href="/bekken-rugspanning" className="rounded border border-gray-200 bg-white p-6 text-center text-gray-700 hover:border-black">
+              Bekken- en rugspanning
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* HERKENNING */}
       <section className="bg-gray-50 py-20">
@@ -141,32 +167,7 @@ export default function VoorWie() {
         </div>
       </section>
 
-      {/* KLACHTEN */}
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-2xl font-semibold mb-10">
-            Klachten waarbij dit vaak speelt
-          </h2>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-            <a href="/kaakspanning" className="rounded border border-gray-200 bg-white p-6 text-center text-gray-700 hover:border-black">
-              Kaakspanning
-            </a>
-            <a href="/tinnitus" className="rounded border border-gray-200 bg-white p-6 text-center text-gray-700 hover:border-black">
-              Tinnitus
-            </a>
-            <a href="/hoofdpijn" className="rounded border border-gray-200 bg-white p-6 text-center text-gray-700 hover:border-black">
-              Hoofdpijn
-            </a>
-            <a href="/nek-schouderspanning" className="rounded border border-gray-200 bg-white p-6 text-center text-gray-700 hover:border-black">
-              Nek- en schouderspanning
-            </a>
-            <a href="/bekken-rugspanning" className="rounded border border-gray-200 bg-white p-6 text-center text-gray-700 hover:border-black">
-              Bekken- en rugspanning
-            </a>
-          </div>
-        </div>
-      </section>
+      
 
       {/* CTA */}
       <section className="bg-black text-white py-20 text-center">

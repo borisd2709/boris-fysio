@@ -1,9 +1,8 @@
-import Link from "next/dist/client/link"
 
-export default function HerstelPage() {
-  return (
-    <>
-<section className="max-w-4xl mx-auto px-6 py-24">
+import Link from "next/dist/client/link";
+
+export default function LeefstijlPage() {
+  return (<section className="max-w-4xl mx-auto px-6 py-24">
 
   <h1 className="text-4xl md:text-5xl font-semibold mb-8">
     Leefstijl, ademhaling en herstel
@@ -44,6 +43,7 @@ export default function HerstelPage() {
   <h2 className="text-2xl font-semibold mb-6">
     Onderwerpen die aan bod kunnen komen
   </h2>
+  
 
   <ul className="space-y-3 text-gray-700 mb-12">
     <li>Neusademhaling en mondademhaling</li>
@@ -53,7 +53,20 @@ export default function HerstelPage() {
     <li>Hooikoorts en ademhaling</li>
     <li>Leefstijl en belastbaarheid</li>
   </ul>
+<section className="py-24 text-center">
+        <h2 className="text-2xl mb-4">
+          Ben je nieuwsgierig naar deze onderwerpen?
+        </h2>
 
+        <p className="text-gray-600 mb-6">
+          Soms begint verandering bij één inzicht.
+        </p>
+
+        <Link href="/kennisbank" className="inline-flex items-center justify-center rounded-full bg-gray-900 px-6 py-3 text-white font-medium hover:bg-gray-800 transition">
+          Bekijk de kennisbank
+        </Link>
+      
+        </section>
   <h2 className="text-2xl font-semibold mb-6">
     Binnen deze benadering onderzoeken we onder andere
   </h2>
@@ -80,21 +93,6 @@ export default function HerstelPage() {
   </p>
 
 </section>
-{/* CTA */}
-      <section className="py-24 text-center">
-        <h2 className="text-2xl mb-4">
-          Wil je ervaren welke invloed leefstijl heeft op jouw herstel?
-        </h2>
 
-        <p className="text-gray-600 mb-6">
-          Soms begint verandering bij één ervaring.
-        </p>
-
-        <Link href="/afspraak" className="inline-flex items-center justify-center rounded-full bg-gray-900 px-6 py-3 text-white font-medium hover:bg-gray-800 transition">
-          Maak een afspraak
-        </Link>
-      
-        </section>
-    </>
   );
 }

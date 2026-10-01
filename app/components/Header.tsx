@@ -4,12 +4,12 @@ import Link from "next/link";
 
 import { Menu, X } from "lucide-react";
 
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  
 
   const navItems = [
   { href: "/", label: "Home" },
@@ -28,7 +28,7 @@ export default function Header() {
         label: "Manuele therapie",
       },
       {
-        href: "/behandelingen/herstel",
+        href: "/behandelingen/leefstijl",
         label: "Leefstijl, ademhaling en herstel",
       },
     ],
@@ -52,25 +52,7 @@ label: "Kaakfysio App",
   { href: "/afspraak", label: "Afspraak" },
 ];
 
-  useEffect(() => {
-  function handleClickOutside(event: MouseEvent) {
-    if (
-      dropdownRef.current &&
-      !dropdownRef.current.contains(event.target as Node)
-    ) {
-      setOpenDropdown(null);
-    }
-  }
-
-  document.addEventListener("mousedown", handleClickOutside);
-
-  return () => {
-    document.removeEventListener(
-      "mousedown",
-      handleClickOutside
-    );
-  };
-}, []);
+ 
 
   return (
     <header className="bg-white border-b">
@@ -82,7 +64,7 @@ label: "Kaakfysio App",
         <nav className="hidden md:flex items-center gap-6">
           {navItems.map((item) =>
             item.children ? (
-              <div key={item.label} ref={dropdownRef} className="relative">
+              <div key={item.label} className="relative">
                 <button
 onClick={() =>
 setOpenDropdown(
@@ -148,7 +130,7 @@ className="hover:text-[#5E6F52] flex items-center gap-1"
 
     {navItems.map((item) =>
       item.children ? (
-        <div key={item.label} ref={dropdownRef}>
+        <div key={item.label}>
           <button
             type="button"
             onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
