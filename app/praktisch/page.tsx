@@ -120,12 +120,67 @@ export default function TarievenVergoedingen() {
       </section>
 
       {/* CONTRACTVRIJ */}
+      
+
+  
+<section className="py-20 bg-gray-50">
+
+        <div className="max-w-3xl mx-auto px-6">
+          <h2 className="text-2xl font-semibold mb-6">
+    Wat krijg je daarvoor?
+  </h2>
+  <p className="text-gray-700 leading-relaxed mb-6">
+    Mijn doel is niet om zoveel mogelijk behandelingen te geven.
+    Mijn doel is dat je begrijpt wat er speelt, invloed leert
+    uitoefenen op je klachten en uiteindelijk steeds meer
+    zelfstandig verder kunt.
+  </p>
+
+  <ul className="space-y-4 text-gray-700">
+    <li>
+      ✓ Een uitgebreide intake, onderzoek en persoonlijk behandelplan
+    </li>
+
+    <li>
+      ✓ Behandeling afgestemd op jouw situatie en hulpvraag
+    </li>
+
+    <li>
+      ✓ Uitleg over factoren die invloed kunnen hebben op je klachten
+    </li>
+
+    <li>
+      ✓ Oefeningen en praktische handvatten voor thuis
+    </li>
+
+    <li>
+      ✓ Toegang tot kennisclips, kennisbank en online ondersteuning
+    </li>
+
+    <li>
+      ✓ Begeleiding gericht op duurzaam herstel en zelfmanagement
+    </li>
+
+    <li>
+      ✓ Persoonlijke aandacht en ruimte voor jouw verhaal
+    </li>
+    <li>
+  ✓ Toegang tot de Kaakfysio App, kennisclips en online ondersteuning
+</li>
+
+<li>
+  ✓ Mogelijkheid tot verdieping via de online tinnitustraining
+</li>
+  </ul>
+</div>
+</section>
+  
       <section className="py-20 bg-gray-50">
 
         <div className="max-w-3xl mx-auto px-6">
 
           <h2 className="text-3xl font-semibold mb-8">
-            Waarom contractvrij?
+            Waarom ik bewust zonder contracten werk
           </h2>
 
           <p className="text-gray-700 mb-4 leading-relaxed">
