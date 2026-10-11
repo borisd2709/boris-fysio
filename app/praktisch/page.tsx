@@ -165,7 +165,7 @@ export default function TarievenVergoedingen() {
       ✓ Persoonlijke aandacht en ruimte voor jouw verhaal
     </li>
     <li>
-  ✓ Toegang tot de Kaakfysio App, kennisclips en online ondersteuning
+  ✓ Toegang tot de Kaakfysio App 
 </li>
 
 <li>
