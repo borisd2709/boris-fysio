@@ -94,7 +94,16 @@ export default function Page() {
           De onderrug gaat dan meer werk doen,
           wat kan leiden tot spanning of pijn.
         </p>
-
+            <div className="aspect-video rounded-xl overflow-hidden shadow-md">
+    <iframe
+      className="w-full h-full"
+      src="https://www.youtube.com/embed/w9W1CJiWZ4c"
+      
+      title="Spanning laten afvloeien"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    />
+  </div>
         {/* BEKKEN */}
         <h2 className="text-2xl font-semibold mt-12 mb-4">
           De rol van het bekken

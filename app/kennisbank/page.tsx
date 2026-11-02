@@ -46,7 +46,16 @@ const categories = [
       },
     ],
   },
-
+  {
+    title: "Rug & Adaptatie",
+    posts: [
+      {
+        title: "Waarom je adaptatie de kans moet geven",
+        slug: "RugspanningAdaptatie",
+      },
+      
+    ],
+  },
   {
     title: "Kaak & Ademhaling",
     posts: [
