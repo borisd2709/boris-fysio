@@ -164,6 +164,12 @@ export default function BekkenRugPage() {
           <Link href="/stress-burnout" className="underline">
             Lees meer over stress en spanning
           </Link>
+          <Link href="/RugspanningAdaptatie" className="underline">
+            Lees meer over een juiste adaptatie van de rug
+          </Link>
+          <Link href="/ademhaling-rugklachten" className="underline">
+            Lees meer over ademhaling en spanning in je rug en bekken
+          </Link>
 
         </div>
       </section>

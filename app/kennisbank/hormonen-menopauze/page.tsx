@@ -1,4 +1,5 @@
 import Link from "next/link"
+import ReactPlayer from 'react-player';
 
 export default function HormonenMenopauzePage() {
   return (
@@ -141,6 +142,27 @@ export default function HormonenMenopauzePage() {
           </p>
 
         </div>
+        <div className="my-12">
+
+  <div className="bg-[#F7F7F4] rounded-2xl p-8 my-12">
+
+  <h2 className="text-2xl font-semibold mb-3">
+    Video: Veranderingen in de (peri)menopauze
+  </h2>
+
+  <p className="text-gray-600 mb-6">
+    In deze video wordt besproken welke lichamelijke veranderingen kunnen optreden tijdens de peri-menopauze en menopauze, en welke invloed deze kunnen hebben op herstel, belastbaarheid en dagelijks functioneren.
+  </p>
+
+  <ReactPlayer
+    src="https://dl.dropboxusercontent.com/scl/fi/wa5xiy4og1n6nstakrcni/Menopauzia-1.mp4?rlkey=psqu96zal5t4wdmuzq5pwsmdw"
+    controls
+    width="100%"
+    height="500px"
+  />
+
+</div>
+      </div>
       </section>
 
       {/* SYSTEEM */}

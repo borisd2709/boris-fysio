@@ -23,6 +23,13 @@ const clips = [
     
   },
   {
+    id: "Correcte ontspannen ademhaling",
+    title: "Correcte ontspannen ademhaling",
+    description: "Item over correcte ontspannen ademhaling.",
+    youtubeId: "w9W1CJiWZ4c",
+    
+  },
+  {
     id: "Goede ademhaling",
     title: "Goede ademhaling",
     description: "Item over goede ademhaling.",
