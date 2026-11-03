@@ -125,12 +125,23 @@ export default function Page() {
           en dat kan de onderrug belasten.
         </p>
 
-        {/* KAAK */}
-        <h2 className="text-2xl font-semibold mt-12 mb-4">
-          Verbinding met de kaak
-        </h2>
+<section className="py-24 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
-        <p className="mb-4 text-gray-700">
+          <div
+            className="h-[400px] bg-cover rounded"
+style={{
+  backgroundImage: "url('/images/tongpositie.jpg')",
+  backgroundPosition: "right center",
+}}
+          />
+
+          <div>
+            <h2 className="text-2xl font-semibold mb-6">
+              Verbinding met de kaak
+            </h2>
+
+            <p className="mb-4 text-gray-700">
           Wat minder bekend is:
           de kaak en ademhaling hangen samen.
         </p>
@@ -145,6 +156,10 @@ export default function Page() {
           Dit werkt door in het hele lichaam —
           van kaak tot bekken.
         </p>
+          </div>
+
+        </div>
+      </section>
 
         {/* HOUDING */}
         <h2 className="text-2xl font-semibold mt-12 mb-4">
